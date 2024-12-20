@@ -27,6 +27,6 @@ python workflow_llm.py "add a contact page"
 # Run as API server
 python workflow_llm.py api
 
-curl -X POST "http://localhost:8000/api/workflow_llm" \
+curl -X POST "http://localhost:8000/api/hax-workflow" \
      -H "Content-Type: application/json" \
      -d '{"query": "create a new site called portfolio"}'
