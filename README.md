@@ -1,5 +1,23 @@
-# claudeHelp
-add env var ANTHROPIC_API_KEY
+# set up local python environment
+python -m venv venv
+
+(on Windows)
+venv\Scripts\activate
+
+OR 
+
+(on Mac/Linux)
+source venv/bin/activate
+
+
+pip install -r requirements.txt
+
+
+
+# Environment Variable needed
+add env var ANTHROPIC_API_KEY to local .env
+
+
 
 # Run as CLI
 python workflow_llm.py "create a new site called portfolio" 
