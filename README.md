@@ -30,3 +30,7 @@ python workflow_llm.py api
 curl -X POST "http://localhost:8000/api/hax-workflow" \
      -H "Content-Type: application/json" \
      -d '{"query": "create a new site called portfolio"}'
+
+
+# Sample output from curl
+{"commands":["hax site start --name portfolio --y","cd portfolio","hax site node:add --title 'about' --y"],"descriptions":["Create new Hax site","Change to portfolio directory","Add new page with title 'about'"],"explanation":"Commands to execute:\n• Create new Hax site: hax site start --name portfolio --y\n• Change to portfolio directory: cd portfolio\n• Add new page with title 'about': hax site node:add --title 'about' --y\n\nSpecial notes:\n• Create new site named 'portfolio'\n• Add an 'about' page to the newly created site","confidence":0.8}
